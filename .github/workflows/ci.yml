@@ -1,5 +1,5 @@
   update-gitops:
-    needs: build-image
+    needs: push-image
     runs-on: ubuntu-latest
     steps:
       - name: Cloner le dépôt d'infrastructure
