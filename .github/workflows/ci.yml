@@ -5,7 +5,7 @@
       - name: Cloner le dépôt d'infrastructure
         uses: actions/checkout@v4
         with:
-          repository: jean-abb/kustomize # A REMPLACER (ex: <VOTRE_USER_GITHUB>/gitops-infra)
+          repository: jean-abb/helm # A REMPLACER (ex: <VOTRE_USER_GITHUB>/gitops-infra)
           token: ${{ secrets.GITOPS_PAT }}
           path: 'infra-repo' # On clone dans un sous-dossier pour ne pas écraser l'espace de travail
 
